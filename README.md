@@ -39,12 +39,14 @@ pip install --upgrade soco
 ./sonos_scan.sh 192.168.1.0/24
 Скрипт ищет открытые 1400/1443, скачивает xml/device_description.xml, проверяет <manufacturer>Sonos</manufacturer> и печатает имя комнаты/модель.
 
-# Пример вывода:
-# IP               | RoomName                  | Model
-# -----------------+---------------------------+-----------------------------
-# 192.168.1.18     | Living Room               | Sonos One
+Пример вывода:
+```
+IP               | RoomName                  | Model
+-----------------+---------------------------+-----------------------------
+192.168.1.18     | Living Room               | Sonos One
+```
 
-## Воспроизведение по IP и URL
+Воспроизведение по IP и URL
 # Базовый пример
 ./sonos_play.py --ip 192.168.1.18 --url "http://example.com/stream.mp3"
 
